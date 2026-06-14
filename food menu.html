@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My food menu</title>
+    <style
+        body {
+            font-family: Arial;
+            background: #f8f8f8;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 { color: #ff6347;} 
+        
+        /* Sibling Selector - styles the paragraph right after h1 */
+        h1 + p {
+            backgrund: #ff6347;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            display: inline-block;
+        }
+
+        ul { padding: 0; margin-top: 20px; }
+
+        /* Child Selector - styles only direct children of ul */
+        ul > li {
+            list-style: none;
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 18px;
+            width: 260px;
+            
+        }
+
+        /* nth child - highlight the 3rd item as chef's special */
+        ul > li:nth-child(3) {
+            background: #ffa8e5;
+            color: white;
+            font-weight: bold;
+        }
+
+        .des {
+            color: #555;
+            font-size: 14px;
+            margin-top: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* first-letter - makes the first letter big and bold */
+        .des:first-letter {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6347;
+        }
+
+        .links { margin-top: 30px; }
+
+        /* Hover Effect - links glow when mouse moves over them */
+        a {
+            color: #99b4ff;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid #ff2600;
+            border-radius: 8px;
+            padding: 8px 18px;
+            margin: 0 12px;
+        }
+
+        a:hover {
+            background: #525252;
+            color: white;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>My food menu</h1>
+    <p<>Welcome to our delicious menu! Explore our tasty dishes below.</p>
+
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Pasta</li>
+        <li>Salad</li>
+        <li>Ice Cream</li>
+        <li>Tacos</li>
+        <li>Noodles</li>
+    </ul>
+
+    <p class="des">Our menu features a variety of dishes to satisfy every craving. From classic comfort foods to fresh and healthy options,
+     we have something for everyone. Don't forget to try our chef's special pasta, it's a customer favorite!</p>
+
+     <div class="links">
+        <a href="#">Order Now</a>
+        <a href="#">See More</a>
+     </div>
+</body>
+
+
+
+    
