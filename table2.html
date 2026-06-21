@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My pate page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #838383;
+            padding: 65px;
+            text-align: center;
+            min-height: 1800px;
+        }
+        h1,h2 { color: lightblue; }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+        }
+
+        .list-item {
+            background-color: #555;
+            border:2px solid #3f0000
+            padding: 10px 20px;
+            margin: 10px auto;
+            width: 200px;
+        }
+
+        .speacial-note {
+            position: relative;
+            left:30px;
+            background-color: gold;
+            padding: 15px 25px;
+        }
+
+        .pet-card {
+            position: relative;
+            background-color: white;
+            border: 3px solid darkorange
+            padding: 15px 25px;
+        }
+
+        .badge {
+            position:absolute;
+            top: 8px;
+            right: 8px;
+            background-color: forestgreen;
+            color: red;
+            padding: 4px 8px;
+        }
+
+        .section-label {
+            position:sticky
+            top: 55px;
+            background-color: lightblue;
+            color: white;
+            padding: 10px 20px;
+            margin: 15px 0 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">My pate page - Buddy the lebrador</div>
+    <h1>Meet Buddy</h1>
+
+    <h2>static</h2>
+    <div class="list-item">Buddy is a Labrador</div>
+    <div class="list-item">Buddy is 5 years old</div>
+
+    <h2>relative</h2>
+    <p>This note shifts right from its normal position.</p>
+    <div class="speacial-note">Buddy loves to play fetch</div>
+
+    <h2>absolute</h2>
+    <p>This card is positioned relative to the page.</p>
+    <div class="pet-card">
+        <div class="badge">Best Friend</div>
+        Buddy is a loyal companion.
+    </div>
+
+    <h2>sticky</h2>
+    <p>This label sticks to the top of the page when you scroll down.</p>
+    <div class="section-label">Buddy's Favorite Activities</div>
+    <div class="list-item">Playing fetch</div>
+    <div class="list-item">Going for walks</div>
+    <div class="list-item">Swimming</div>
+    <div class="list-item">Cuddling</div>
+    <div class="list-item">Learning new tricks</div>
+    <div class="list-item">Meeting new friends</div>
+    <div class="list-item">Exploring new places</div>
+    <div class="list-item">Eating treats</div>
+    <div class="list-item">Napping</div>
+</body>
+</html>
