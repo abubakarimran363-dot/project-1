@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Magic Word</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body {background: lavender;}
+            h1,h3 { color: darkviolet; }
+            .box { background: white; color: darkviolet }
+        </style>
+    </head>
+    <body>
+        <div class="container py-4">
+            <h1 class="mb-2">My Magic Word Lab</h1>
+            <p class="text-muted mb-4">Find the magic word in a list of words using javascript array methods</p>
+
+            <!--TOPIC 1: find()-->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Find the Magic Word</h3>
+                    <button class="btn btn-primary" onclick="findMagic()">Find Magic Word</button>
+                    <div id="magicResult" class="box p-3 mt-3 rounded"></div>
+                </div>
+            </div>
+            <!-- TOPIC 2: String and number methods-->
+            <div class="card mb-4"><div class="card-body">
+                <h3 class="card-title">Switch the Type</h3>
+                <input id="numIn" class="form-control mb-2" placeholder="Type any number here (try:42)">
+                <button class="btn btn-warning" onclick="tostr()">Turn into Text</button>
+                <button class="btn btn-warning" onclick="tonum()">Turn into Number</button>
+                <div id="convResult" class="box p-3 rounded">Type a number above then press a button!</div>                
+            </div></div>
+            <!--TOPIC 3: search() and replace()-->
+            <div class="card mb-4"><<div class="card-body">
+                <h3 class="card-title">Find and Swap a Word</h3>
+                <input id="textIn" class="form-control mb-2" placeholder="Type any text here (try: I love magic!)">
+                <button class="btn btn-success mr-2" onclick="search()">Search for 'magic'</button>
+                <button class="btn btn-success" onclick="replace()">Replace 'magic' with 'wonderful'</button>
+                <div id="searchResult" class="box p-3 mt-3 rounded">Sentence: "The dragon flew over the big castle." </div>
+            </div></div>
+        </div>
+        <!-- topic 4: try/catch-->
+         <div class="card mb-4">div class=<card-body>
+            <h3 class=card-title>Catch the Mistake</h3>
+            <input id="divIn" class="form-control mb-2" placeholder="Type any number here (try: 42)">
+            <button class="btn btn-danger" onclick="divide()">Divide 100 by your number</button>
+            <div id="divResult" class="box p-3 mt-3 rounded">
+                Type a number above then press the button!
+            </div>
+        </div>
+        <script>
+            var words = ["apple", "banana", "cherry", "magic", "date"];  // Topic 1
+
+            function findMagic() {
+                var magicWord = words.find(function(word) {
+                    return word === "magic";
+                });
+                document.getElementById("magicResult").innerHTML = "The magic word is: " + magicWord;
+            }
+        </script>
+    </body>
+</html>
