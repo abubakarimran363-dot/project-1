@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Heading Font */
+.m-heading {
+    font-family:'Courier New', Courier, monospace;
+}
+.text-white {
+    color: #fff;
+}
+
+/* Main Container height */
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Aligning item in main row */
+.main-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Changing Name Font Size */
+.main-row h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Making the main image the size of the screen */
+.main-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
